@@ -1,0 +1,39 @@
+CS3753 (Operating Systems)
+Spring 2014
+University of Colorado Boulder
+Programming Assignment 2
+Public Code
+
+Authored by Kristina Entzel
+With help from:
+Matt Paley, especially with Malloc
+
+
+Adopted from previous code by
+Andy Sayler - 2012
+http://www.andysayler.com
+Chris Wailes <chris.wailes@gmail.com> - 2010
+Wei-Te Chen <weite.chen@colorado.edu> - 2011
+Blaise Barney - pthread-hello.c
+
+---Folders---
+input - names*.txt input files
+handout - Assignment description and documentation
+
+---Executables---
+multilookup - A multithreaded DNS query-er
+
+
+---Examples---
+Build:
+ make
+
+Clean:
+ make clean
+
+Lookup DNS info for all names files in input folder:
+ ./multilookup input/names*.txt results.txt
+
+Check queue for memory leaks:
+ valgrind ./multilookup
+
